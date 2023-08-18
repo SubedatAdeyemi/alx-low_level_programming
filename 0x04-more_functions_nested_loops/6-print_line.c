@@ -2,7 +2,9 @@
 
 /**
  * print_line - draws a straight line in the terminal
- * @param n - number of times the character _ should be printed
+ * @n:  number of line to draw
+ *
+ * Return: void
  */
 
 void print_line(int n)
@@ -16,7 +18,7 @@ void print_line(int n)
 
 		for (i = 1; i <= n; i++)
 		{
-			_putchar('_');
+			_putchar(95);
 		}
 		_putchar('\n');
 	}
