@@ -18,10 +18,24 @@ int main(void)
 	for (i = 0; i < 1024; i++)
 	{
 		if ((i % 3) == 0 || (i % 5) == 0)
-		{
 			sum += i;
-			printf("%d ", sum);
+	}
+	if (sum == 0)
+	{
+		_putchar('0');
+	}
+	else
+	{
+		int reversed = 0;
+		int originalSum = sum;
+
+		while (sum = 0)
+		{
+			int digit = sum % 10;
+			reversed = reversed * 10 + digit;
+			sum /= 10;
 		}
 	}
+	_putchar("\n");
 	return (0);
 }
